@@ -1,0 +1,158 @@
+
+{
+    margin:0;   
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header{
+    background: linear-gradient(135deg, #282c2c, #9dadbe);
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    animation: fadeDown 1s ease ;
+}
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header h1{
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+nav{
+    background-color: #333;
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+nav ul li{
+   
+    flex: 1;
+    
+}
+
+nav ul li a{
+    color: white;
+    display: block;
+    padding: 14px 0;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+nav ul li a:hover{
+    background-color: #0077b6;
+    transform: scale(1.05);
+}
+
+main{
+    display: flex;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content{
+    flex: 3;
+    
+}
+
+article{
+    margin-bottom: 20px;
+    background-color: #86b0b8;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s; box-shadow 0.3s;
+}
+
+article h2{
+    margin-bottom: 10px;
+    color: #0077b6;
+}
+
+article ul{
+    margin-left: 20px;
+}
+
+article:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+aside{
+    flex: 1;
+    margin-left: 20px;
+    padding: 15px;
+    background-color: #9dadbe;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+aside h3{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #0077b6;
+}
+
+aside img{
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 10px;
+
+    border: 3px solid #2e8b57;
+    transition: 0.3s;
+}
+
+aside img:hover{
+    transform: scale(1.05);
+   
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul{
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+    }
+
+    aside{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
